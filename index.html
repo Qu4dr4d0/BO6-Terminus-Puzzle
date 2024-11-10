@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B06 Terminus Math Puzzle</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    
+
+    <h1>Terminus Math Puzzle Solver</h1>
+    <section class="container">
+        <h2>Symbols</h2>
+        <div class="tap__container">
+            <div id="x" class="boxLetters">
+                <p id="px1">X</p>
+                <p id="px2">Click here to select the symbol</p>
+                <img id="xImage" src="" alt="">
+            </div>
+            <div id="y" class="boxLetters boxLettersY">
+                <p id="py1">Y</p>
+                <p id="py2">Click here to select the symbol</p>
+                <img id="yImage" src="" alt="">
+            </div>
+            <div id="z" class="boxLetters">
+                <p id="pz1">Z</p>
+                <p id="pz2">Click here to select the symbol</p>
+                <img id="zImage" src="" alt="">
+            </div>
+        </div>
+        <p>Your code: <span id="code"></span></p>
+        <div>
+            <button id="btnCalculate">Calculate</button>
+            <button id="btnReset">Reset All</button>
+        </div>
+    </section>
+
+    <section id="xBox" class="img-container hidden">
+        <div class="spacer">
+            <img id="xSymbol1" class="img" src="images/0.png" alt="">
+            <img id="xSymbol2" class="img" src="images/10.png" alt="">
+            <img id="xSymbol3" class="img" src="images/11.png" alt="">
+        </div>
+        
+        <div class="spacer">
+            <img id="xSymbol4" class="img" src="images/20.png" alt="">
+            <img id="xSymbol5" class="img" src="images/21.png" alt="">
+            <img id="xSymbol6" class="img" src="images/22.png" alt="">
+        </div>
+        <button id="closeXbox" class="closeXBox">Close</button>
+    </section>
+
+    <section id="yBox" class="img-container hidden">
+        <div class="spacer">
+            <img id="ySymbol1" class="img" src="images/0.png" alt="">
+            <img id="ySymbol2" class="img" src="images/10.png" alt="">
+            <img id="ySymbol3" class="img" src="images/11.png" alt="">
+        </div>
+        
+        <div class="spacer">
+            <img id="ySymbol4" class="img" src="images/20.png" alt="">
+            <img id="ySymbol5" class="img" src="images/21.png" alt="">
+            <img id="ySymbol6" class="img" src="images/22.png" alt="">
+        </div>
+        <button id="closeYbox" class="closeYBox">Close</button>
+    </section>
+
+    <section id="zBox" class="img-container hidden">
+        <div>
+            <img id="zSymbol1" class="img" src="images/0.png" alt="">
+            <img id="zSymbol2" class="img" src="images/10.png" alt="">
+            <img id="zSymbol3" class="img" src="images/11.png" alt="">
+        </div>
+        
+        <div>
+            <img id="zSymbol4" class="img" src="images/20.png" alt="">
+            <img id="zSymbol5" class="img" src="images/21.png" alt="">
+            <img id="zSymbol6" class="img" src="images/22.png" alt="">
+        </div>
+        <button id="closeZbox" class="closeZBox">Close</button>
+    </section>
+
+   
+    <script src="script.js"></script>
+</body>
+</html>
