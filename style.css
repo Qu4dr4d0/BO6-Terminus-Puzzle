@@ -29,12 +29,14 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    background-position: center;
 }
 
 /*Styling*/
 h1 {
     margin-bottom: 20px;
     color: var(--white);
+    padding: 0px 20px;
 }
 
 .container {
@@ -128,5 +130,11 @@ h1 {
 
 .img {
     cursor: pointer;
+}
+
+@media (max-width: 410px) {
+    .boxLetters {
+        width: 80px;
+    }
 }
 

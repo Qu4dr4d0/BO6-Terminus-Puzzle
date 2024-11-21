@@ -58,6 +58,9 @@ let x = 0;
 let y = 0;
 let z = 0;
 
+
+
+
 xButton.onclick = function() {
     xBox.classList.add('appear');
 
@@ -219,7 +222,13 @@ zButton.onclick = function() {
 
 // calculate
 btnCalculate.onclick = function() {
-    code.innerHTML = `${2 * x + 11}, ${((2 * z) + y) - 5}, ${(y + z) - x}`;
+
+    const formulaX = 2 * x + 11;
+    const formulaY = ((2 * z) + y) - 5;
+    const formulaZ = (y + z) - x;
+
+    
+    code.innerHTML = `${Math.abs(formulaX)}, ${Math.abs(formulaY)}, ${Math.abs(formulaZ)}`;
 
 }
 
